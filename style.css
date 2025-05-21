@@ -10,7 +10,7 @@
 body.resume {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: url('https://raw.githubusercontent.com/navya-tha/Resume/main/ground.jpg') no-repeat center center fixed;
+  url('https://raw.githubusercontent.com/navya-tha/Resume/main/ground.jpg');  no-repeat center center fixed;
   background-size: cover;
   position: relative;
   color: #fff;
