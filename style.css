@@ -1,0 +1,176 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.resume {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: url('ground.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+/* Dark overlay */
+body.resume::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+  padding: 40px 5%;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #148cc8;
+  margin-bottom: 10px;
+}
+
+/* Section styling */
+.resume-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #148cc8;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #f7fdfb;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: #f3f4f6;
+  border-color: #eff6f3;
+  color: #000;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.btn-success:hover {
+  background-color: #148cc8;
+  color: #fff;
+}
+
+.countdown-img {
+  display: block left;
+  width: 100%;     /* Adjust width to medium size */
+  max-width: 50px;  /* Optional: Prevents it from being too large on big screens */
+  margin: 20px auto; /* Center the image with spacing */
+  border: 2px solid #ccc; /* Optional: add a light border */
+  border-radius: 10px;     /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+@media (max-width: 768px) {
+  .countdown-img {
+    width: 90%;
+  }
+}
+
+
+
+/* Footer styling */
+/* Footer Styling */
+.custom-footer {
+  background-color: #0c1c3c;
+  padding: 10px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.custom-footer .social-icons a {
+  color: #f7f7f7;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.custom-footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #f12222;
+}
+
+.custom-footer .footer-text {
+  margin: 0;
+}
+
+.custom-footer .footer-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-footer .footer-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .custom-footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .custom-footer .social-icons {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .socio {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}
+
+/* Button Styling */
+.custom-btn {
+  display: inline-block;
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0a58ca; /* Darker blue */
+  color: #ffffff;
+}
+
+
+
