@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family:cursive;
   color: #ffffff;
   background-image: url('https://raw.githubusercontent.com/navya-tha/Resume/main/ground.jpg'); /* Replace with your background */
   background-size: cover;
@@ -43,70 +43,56 @@ main {
 }
 
 /* Footer */
-footer {
+.custom-footer {
   background-color: #0c1c3c;
+  padding: 8px 20px; /* Reduced padding for a smaller height */
   color: white;
-  padding: 15px 20px;
+  font-family: cursive;
+  font-size: 14px;
+  width: 100%;
+}
+
+.custom-footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
-  font-family: 'Segoe UI', sans-serif;
+  flex-wrap: wrap;
 }
 
-footer .footer-left p {
-  margin: 0;
-}
-
-/* Keep your existing social-icons styles */
-.social-icons a {
-  margin: 0 10px;
-  font-size: 24px;
-  color: white;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #0077b5; /* LinkedIn Blue */
-}
-
-.social-icons a:last-child:hover {
-  color: #FF0000; /* YouTube Red */
-}
-
-
-/* Social Icons */
-.social-icons {
-  margin-top: 12px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 32px;
-  color: white;
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #0077b5; /* LinkedIn Blue */
-}
-
-.social-icons a:last-child:hover {
-  color: #FF0000; /* YouTube Red */
-}
-
-.social-icons img {
-  height: 30px;
-  width: 30px;
+.custom-footer .social-icons a {
+  color: #f7f7f7;
+  margin-left: 15px; /* margin-left instead of margin-right for right-alignment */
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
-  transform: scale(1.1);
+.custom-footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #f12222;
 }
 
+.custom-footer .footer-text {
+  margin: 0;
+}
 
+.custom-footer .footer-text a {
+  color: white;
+  text-decoration: none;
+}
 
+.custom-footer .footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .custom-footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .custom-footer .social-icons {
+    margin-top: 8px;
+  }
+}
