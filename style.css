@@ -1,21 +1,17 @@
-/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
 body.resume {
-    font-family:cursive;
+  font-family:cursive;
   line-height: 1.6;
-  background:url('https://raw.githubusercontent.com/navya-tha/Resume/main/ground.jpg');  no-repeat center center fixed;
+  background: url('https://raw.githubusercontent.com/navya-tha/Resume/main/ground.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
   color: #fff;
 }
-
 
 /* Dark overlay */
 body.resume::before {
@@ -74,12 +70,12 @@ h1, h2, h3 {
 
 .countdown-img {
   display: block left;
-  width: 100%;     /* Adjust width to medium size */
-  max-width: 50px;  /* Optional: Prevents it from being too large on big screens */
-  margin: 20px auto; /* Center the image with spacing */
-  border: 2px solid #ccc; /* Optional: add a light border */
-  border-radius: 10px;     /* Optional: rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  width: 100%;    
+  max-width: 50px;  
+  margin: 20px auto; 
+  border: 2px solid #ccc; 
+  border-radius: 10px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 @media (max-width: 768px) {
@@ -90,7 +86,6 @@ h1, h2, h3 {
 
 
 
-/* Footer styling */
 .custom-footer {
   background-color: #0c1c3c;
   padding: 8px 20px; /* Reduced padding for a smaller height */
@@ -131,6 +126,8 @@ h1, h2, h3 {
 .custom-footer .footer-text a:hover {
   text-decoration: underline;
 }
+
+/* Responsive adjustments */
 @media (max-width: 576px) {
   .custom-footer .container {
     flex-direction: column;
@@ -139,32 +136,15 @@ h1, h2, h3 {
   }
 
   .custom-footer .social-icons {
-    margin-bottom: 10px;
+    margin-top: 8px;
   }
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .content-wrapper {
-    padding: 20px;
-  }
-
-  footer .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .socio {
-    margin-top: 10px;
-    align-self: flex-end;
-  }
-}
 
 /* Button Styling */
 .custom-btn {
   display: inline-block;
-  background-color: #0d6efd; /* Bootstrap primary color */
+  background-color: #0d6efd;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -176,9 +156,6 @@ h1, h2, h3 {
 }
 
 .custom-btn:hover {
-  background-color: #0a58ca; /* Darker blue */
+  background-color: #0a58ca; 
   color: #ffffff;
 }
-
-
-
